@@ -1,0 +1,29 @@
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-link,
+.header-tel {
+  display: flex;
+  align-items: center;
+  color: var(--secondary-text-color);
+  @include font (500, 14px);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  gap: 10px;
+  fill: currentColor;
+
+  transition: color var(--timing-function), fill var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--link-hover-blue-color);
+    fill: var(--link-hover-blue-color);
+  }
+}
